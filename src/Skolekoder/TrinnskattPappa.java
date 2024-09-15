@@ -4,7 +4,7 @@ import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class PappaTrinnskatt {
+public class TrinnskattPappa {
 
 	// #region Klasse konstanter
 

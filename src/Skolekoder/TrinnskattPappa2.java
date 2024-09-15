@@ -4,7 +4,7 @@ import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showInputDialog;
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class PappaTrinnskatt2 {
+public class TrinnskattPappa2 {
 
 		// Skattetrinn 1-4 maks betaling
 		final static double t1MaksSum = 1441;
