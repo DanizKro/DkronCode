@@ -9,6 +9,11 @@ public class Trinnskatt {
 	public static void main(String[] args) {
 		double inntekt = parseInt(showInputDialog("Personinntekt?")); // forkortet versjon av input dialog
 		
+		double[] trinn = {0.017,0.04,0.136,0.166,0.176};
+		
+		double[] grense = {208050,208051,292851,670001,937901,1350001};
+		
+		
 		double trinn1 = (1.7/100);
 		double trinn2 = (4.0/100);
 		double trinn3 = (13.6/100);
