@@ -9,10 +9,6 @@ public class Trinnskatt {
 	public static void main(String[] args) {
 		double inntekt = parseInt(showInputDialog("Personinntekt?")); // forkortet versjon av input dialog
 
-		double[] trinn = { 0.017, 0.04, 0.136, 0.166, 0.176 };
-
-		double[] grense = { 208050, 208051, 292851, 670001, 937901, 1350001 };
-
 		double trinn1 = (1.7 / 100);
 		double trinn2 = (4.0 / 100);
 		double trinn3 = (13.6 / 100);
@@ -29,25 +25,25 @@ public class Trinnskatt {
 		double sum = 0;
 
 		if (inntekt < grense0) {
-			sum = 0; // trinn 0
+			sum = 0; 										   // trinn 0
 		}
 
-		else if (inntekt >= grense1 && inntekt < grense2) { // trinn 1
+		else if (inntekt >= grense1 && inntekt < grense2) {    // trinn 1
 			sum = (inntekt - grense1) * trinn1;
-		} else if (inntekt >= grense2 && inntekt < grense3) { // trinn 2
+		} else if (inntekt >= grense2 && inntekt < grense3) {  // trinn 2
 			sum = (inntekt - grense2) * trinn2;
 			sum += (grense2 - grense1 - 1) * trinn1;
 
-		} else if (inntekt >= grense3 && inntekt < grense4) { // trinn 3
+		} else if (inntekt >= grense3 && inntekt < grense4) {  // trinn 3
 			sum = (inntekt - grense3) * trinn3;
 			sum += (grense3 - grense2 - 1) * trinn2;
 			sum += (grense2 - grense1 - 1) * trinn1;
-		} else if (inntekt >= grense4 && inntekt < grense5) { // trinn 4
+		} else if (inntekt >= grense4 && inntekt < grense5) {  // trinn 4
 			sum = (inntekt - grense4) * trinn4;
 			sum += (grense4 - grense3 - 1) * trinn3;
 			sum += (grense3 - grense2 - 1) * trinn2;
 			sum += (grense2 - grense1 - 1) * trinn1;
-		} else if (inntekt >= grense5) { // trinn 5
+		} else if (inntekt >= grense5) { 					   // trinn 5
 			sum = (inntekt - grense5) * trinn5;
 			sum += (grense5 - grense4 - 1) * trinn4;
 			sum += (grense4 - grense3 - 1) * trinn3;
