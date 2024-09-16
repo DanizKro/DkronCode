@@ -51,6 +51,6 @@ public class Trinnskatt {
 			sum += (grense2 - grense1 - 1) * trinn1;
 		}
 
-		showMessageDialog(null, "Du skal betale " + sum + " i trinnskatt.");
+		showMessageDialog(null, "Du skal betale " +String.format("%.2f", sum) + " i trinnskatt.");
 	}
 }
