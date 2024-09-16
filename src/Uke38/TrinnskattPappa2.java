@@ -1,4 +1,4 @@
-package Skolekoder;
+package Uke38;
 
 import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showInputDialog;
