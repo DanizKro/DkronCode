@@ -1,4 +1,4 @@
-package InnleveringUke38;
+package InnleveringUke37;
 
 import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showInputDialog;
