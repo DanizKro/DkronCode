@@ -15,7 +15,7 @@ public class O3 {
 
 			long resultat = fakultet(n);
 
-			showMessageDialog(null, "Fakultet av tallet" + resultat);
+			showMessageDialog(null, "Fakultet av tallet " + n + " er: " + resultat);
 
 			System.out.println(12 % 2);
 		}
