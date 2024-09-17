@@ -22,8 +22,6 @@ public class O1 {
 		double grense4 = 937901;
 		double grense5 = 1350001;
 		
-		double test = 0 ;
-		
 		double sum = 0;
 		
 		
