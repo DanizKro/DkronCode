@@ -28,29 +28,27 @@ public class innlevering2 {
 				{ 5, 7, 9, 7, 3 },
 				{ -1, -1, -2 } };
 		
-		innlevering2.tilStreng(obs);
+		// innlevering2.tilStreng(obs);
 		
 		// innlevering2.skrivUt(innlevering2.settSammen(t1, t2));
 		
-		innlevering2.skrivUt(innlevering2.skaler(2, obs));
+		innlevering2.skrivUt2(innlevering2.skaler(2, obs));
+		//innlevering2.skrivUt2(obs);
 		
 	}
 	
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		int[][] nyMatrise = new int[matrise.length][];
+		int[][] nyMatrise = new int[matrise.length][matrise[0].length];
 		
-		for(int i=0 ; i<matrise.length; i++) {
-			
-			for (int j=0; j<matrise[i].length; j++) {
-			
-				nyMatrise[i][j] *= 2;
-				
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				nyMatrise[i][j] = matrise[i][j];
 			}
-		
-	
-	} return nyMatrise;
-	}
+		}
+		return nyMatrise;
+			}
+
 
 
 	public static void tilStreng(int[][] matrise) {
@@ -94,6 +92,16 @@ public class innlevering2 {
 			}
 	 
 			
+	private static void skrivUt2(int[][] tab) { // e) og f)
+
+		for (int i = 0; i < tab.length; i++) {
+			
+			for (int j = 0; j <tab[i].length; j++)
+				
+				System.out.print(tab[i][j] + ",");
+			System.out.println();
+			}
+		}
 	
 	
 	private static void skrivUt(int[] tab) { // e) og f)
