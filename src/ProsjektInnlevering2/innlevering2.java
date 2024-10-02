@@ -28,11 +28,11 @@ public class innlevering2 {
 				{ 5, 7, 9, 7, 3 },
 				{ -1, -1, -2 } };
 		
-		innlevering2.tilStreng(obs);
+		// innlevering2.tilStreng(obs);
 		
 		// innlevering2.skrivUt(innlevering2.settSammen(t1, t2));
 		
-		innlevering2.skrivUt(innlevering2.skaler(2, obs));
+		innlevering2.skrivUt2(innlevering2.skaler(2, obs));
 		
 	}
 	
@@ -42,12 +42,13 @@ public class innlevering2 {
 		
 		for(int i=0 ; i<matrise.length; i++) {
 			
+			nyMatrise[i] = new int[matrise[i].length];
+			
 			for (int j=0; j<matrise[i].length; j++) {
 			
-				nyMatrise[i][j] *= 2;
+				nyMatrise[i][j] = matrise[i][j]*2;
 				
 			}
-		
 	
 	} return nyMatrise;
 	}
@@ -68,7 +69,7 @@ public class innlevering2 {
 			
 		}
 	}
-
+// setter sammen to 1-dimensjonal tabeller i stigende rekkefølge
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 	
 			
@@ -93,7 +94,17 @@ public class innlevering2 {
 				return nyTabell; 
 			}
 	 
+	public static void skrivUt2(int[][] tab) {
+		
+		for (int i = 0; i< tab.length; i++) {
 			
+			for (int j = 0; j< tab[i].length; j++) 
+				
+				System.out.print(tab[i][j] + ",");
+			System.out.println();
+		}
+	}
+
 	
 	
 	private static void skrivUt(int[] tab) { // e) og f)
