@@ -28,8 +28,10 @@ public class innlevering2 {
 				{ 5, 7, 9, 7, 3 },
 				{ -1, -1, -2 } };
 		
-		// Lag en tabell med innhold av navn, pris, og antall vare
+		// Lag en tabell med innhold av navn, pris, og antall varer
 		//  + lage en metode som skriver ut som streng
+		
+		// Slå sammen Obs og T1 i stigende rekkefølge i ny matrise
 		
 		
 		
