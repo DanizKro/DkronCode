@@ -44,6 +44,32 @@ public class innlevering2 {
 		
 	}
 	
+	// sjekker om matrisen er link en annen matrise
+	public static boolean erLik(int[][] mat1, int[][] mat2) {
+		
+		boolean svar = false;
+		
+		if(mat1.length == mat2.length) {
+			
+		for(int i=0 ; i<mat1.length; i++) {
+			
+			if(mat1[i].length == mat2[i].length) {
+			
+			for (int j=0; j<mat1[i].length; j++) {
+			
+				if(mat1[i][j] == mat2[i][j]) {
+					svar = true;
+				}
+				
+			}
+		}
+	}
+	}
+			return svar;
+}
+	
+	
+	
 	// Multipliserer en alle elementene i en matrise med et gitt tall
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
