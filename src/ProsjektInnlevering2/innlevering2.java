@@ -28,6 +28,12 @@ public class innlevering2 {
 				{ 5, 7, 9, 7, 3 },
 				{ -1, -1, -2 } };
 		
+		// Lag en tabell med innhold av navn, pris, og antall vare
+		//  + lage en metode som skriver ut som streng
+		
+		
+		
+		
 		// innlevering2.tilStreng(obs);
 		
 		// innlevering2.skrivUt(innlevering2.settSammen(t1, t2));
@@ -36,6 +42,7 @@ public class innlevering2 {
 		
 	}
 	
+	// Multipliserer en alle elementene i en matrise med et gitt tall
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
 		int[][] nyMatrise = new int[matrise.length][];
@@ -53,7 +60,7 @@ public class innlevering2 {
 	} return nyMatrise;
 	}
 
-
+// skrive ut en matrise til streng?
 	public static void tilStreng(int[][] matrise) {
 
 		
@@ -94,6 +101,7 @@ public class innlevering2 {
 				return nyTabell; 
 			}
 	 
+	//Skriver ut matriser/fler dimensjonale tabeller
 	public static void skrivUt2(int[][] tab) {
 		
 		for (int i = 0; i< tab.length; i++) {
@@ -106,7 +114,7 @@ public class innlevering2 {
 	}
 
 	
-	
+	//skriver ut endimensjonal tabell
 	private static void skrivUt(int[] tab) { // e) og f)
 
 		for (int i = 0; i < tab.length; i++) {
