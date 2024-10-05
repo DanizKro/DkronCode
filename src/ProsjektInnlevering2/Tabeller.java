@@ -2,7 +2,7 @@ package ProsjektInnlevering2;
 
 import java.util.Arrays;
 
-public class innlevering2 {
+public class Tabeller {
 	
 	public static void main(String[] args) {
 		
@@ -40,7 +40,7 @@ public class innlevering2 {
 		
 		// innlevering2.skrivUt(innlevering2.settSammen(t1, t2));
 		
-		innlevering2.skrivUt2(innlevering2.skaler(2, obs));
+		Tabeller.skrivUt2(Tabeller.skaler(2, obs));
 		
 	}
 	
