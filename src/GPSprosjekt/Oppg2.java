@@ -1,26 +1,47 @@
-package GPSprosjekt;
+package no.hvl.dat100ptc.oppgave2;
 
+import no.hvl.dat100ptc.TODO;
+import no.hvl.dat100ptc.oppgave1.GPSPoint;
 
+public class GPSData {
 
-public class Oppg2 {
+	private GPSPoint[] gpspoints;
+	protected int antall = 0;
 
-	private static int TIME_STARTINDEX = 11; 
+	public GPSData(int antall) {
 
-//	public static int toSeconds(String timestr) {
-//		
-//		int secs;
-//		int hr, min, sec;
-//		
-//		
-//		
-//	}
-//
-//	public static GPSPoint convert(String timeStr, String latitudeStr, String longitudeStr, String elevationStr) {
-//
-//		GPSPoint gpspoint;
-//
-//		// TODO 
-//		throw new UnsupportedOperationException(TODO.method());
-//		
-//	}
+		
+	
+	}
+
+	public GPSPoint[] getGPSPoints() {
+		return this.gpspoints;
+	}
+	
+	protected boolean insertGPS(GPSPoint gpspoint) {
+
+		boolean inserted = false;
+		
+		throw new UnsupportedOperationException(TODO.method());
+		
+		// TODO 
+	
+	}
+
+	public boolean insert(String time, String latitude, String longitude, String elevation) {
+
+		GPSPoint gpspoint;
+
+		throw new UnsupportedOperationException(TODO.method());
+
+		// TODO 
+		
+	}
+
+	public void print() {
+
+		throw new UnsupportedOperationException(TODO.method());
+
+		// TODO 
+	}
 }
