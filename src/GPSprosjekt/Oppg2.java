@@ -1,47 +1,52 @@
-package no.hvl.dat100ptc.oppgave2;
+
+package GPSprosjekt;
 
 import no.hvl.dat100ptc.TODO;
 import no.hvl.dat100ptc.oppgave1.GPSPoint;
+import no.hvl.dat100ptc.oppgave2.GPSDataConverter;
 
-public class GPSData {
+public class Oppg2 {
 
-	private GPSPoint[] gpspoints;
-	protected int antall = 0;
-
-	public GPSData(int antall) {
-
+	
+	public static void main(String[] args) {
+		
+		String txt = "2017-08-13T08:52:26.000Z";
 		
 	
-	}
-
-	public GPSPoint[] getGPSPoints() {
-		return this.gpspoints;
+		int mins = Integer.parseInt(txt.substring(14, 16))*60;
+		
+		System.out.println(Oppg2.toSeconds(txt));
+		
+		
 	}
 	
-	protected boolean insertGPS(GPSPoint gpspoint) {
 
-		boolean inserted = false;
+	public static int toSeconds(String timestr) {
 		
-		throw new UnsupportedOperationException(TODO.method());
-		
-		// TODO 
+		int mins = Integer.parseInt(timestr.substring(14, 16))*60;
+		int timer = Integer.parseInt(timestr.substring(11, 13))*60*60;
+		int sek = Integer.parseInt(timestr.substring(17, 19));
 	
-	}
-
-	public boolean insert(String time, String latitude, String longitude, String elevation) {
-
-		GPSPoint gpspoint;
-
-		throw new UnsupportedOperationException(TODO.method());
-
-		// TODO 
+		int secs = mins + timer + sek;
+	
+		return secs;
 		
 	}
+	public static GPSPoint convert(String timeStr, String latitudeStr, String longitudeStr, String elevationStr) {
 
-	public void print() {
+		
+		// Bruker metoden toSeconds for å konvertere tid
+		int time = GPSDataConverter.toSeconds(timeStr);
+	
+		// Konverter latitude, longitude og elevation til double
+        double latitude = Double.parseDouble(latitudeStr);
+        double longitude = Double.parseDouble(longitudeStr);
+        double elevation = Double.parseDouble(elevationStr);
 
-		throw new UnsupportedOperationException(TODO.method());
+        // Opprett et GPSPoint objekt
+        return new GPSPoint(time, latitude, longitude, elevation);
 
-		// TODO 
+		
+		
 	}
 }
