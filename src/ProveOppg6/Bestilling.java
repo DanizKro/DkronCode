@@ -13,9 +13,8 @@ public class Bestilling {
 			this.adresse = adresse;
 		}
 		
-		public void skrivUt() {
-			
-			System.out.println(kontaktnummer + ", " +  kundenavn + ", " +  adresse);
-		}
+		public String skrivUt() {
+	        return "Kundenavn: " + kundenavn + ", Kontaktnummer: " + kontaktnummer + ", Adresse: " + adresse;
+	    }
 		
 }

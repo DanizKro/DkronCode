@@ -11,9 +11,8 @@ public class SnarestMulig extends Bestilling{
 			this.maxtid = maxtid;
 		}
 		
-		@Override
-		public void skrivUt() {
-			
-			System.out.println(kontaktnummer + ", " +  kundenavn + ", " +  adresse + ", " + maxtid);
-		}
+		 @Override
+		    public String skrivUt() {
+		        return super.skrivUt() + ", Max ventetid: " + maxtid;
+		    }
 }

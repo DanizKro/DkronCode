@@ -13,9 +13,8 @@ public class Tidspunkt extends Bestilling {
 		}
 		
 		@Override
-		public void skrivUt() {
-			
-			System.out.println(kontaktnummer + ", " +  kundenavn + ", " +  adresse + ", " + dato + ", " + tidspunkt);
-		}
+	    public String skrivUt() {
+	        return super.skrivUt() + ", Dato: " + dato + ", Tidspunkt: " + tidspunkt;
+	    }
 	
 }
