@@ -7,7 +7,7 @@ public class Bestilling {
 		String adresse;
 		
 		
-		public void bestilling(String navn, int kontaktnummer, String adresse) {
+		public Bestilling(String navn, int kontaktnummer, String adresse) {
 			this.kundenavn = navn;
 			this.kontaktnummer = kontaktnummer;
 			this.adresse = adresse;
