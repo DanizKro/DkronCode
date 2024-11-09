@@ -13,8 +13,8 @@ public class Main {
 		int svar = Integer.parseInt(innput);
 		
 		Bestilling bestilling = null;
-		
-		
+	
+			
 		if(svar == 1) {
 
 			System.out.print("Tast inn ditt navn(tekst): ");
