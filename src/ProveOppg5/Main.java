@@ -1,25 +1,67 @@
 package ProveOppg5;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ToDoListe toDoListe = new ToDoListe(10); //instansiert objekt på en klasse!
+		Scanner ordre = new Scanner(System.in);
+		System.out.print("Trykk 1 for SnarestMulig bestilling, eller 2 for Tidspunkt");
+		String innput = ordre.nextLine();
 		
-		ToDoElement toDoElement = new ToDoElement("daniel", 5, 2);
-		toDoListe.leggTil(toDoElement);
+		int svar = Integer.parseInt(innput);
 		
-		ToDoElement toDoElement2 = new ToDoElement("riktig", 2, 1); //toDoElement2 er bare et navn
-		toDoListe.leggTil(toDoElement2);
+		Bestilling bestilling = null;
+	
+			
+		if(svar == 1) {
+
+			System.out.print("Tast inn ditt navn(tekst): ");
+			String navn = ordre.nextLine();
 		
-		ToDoElement viktig = toDoListe.finnViktig();
+			System.out.print("Tast inn ditt tlf nummer(tall): ");
+			int nummer = Integer.parseInt(ordre.nextLine());
+			
+			System.out.print("Tast inn adresse(tekst): ");
+			String adresse = ordre.nextLine();
+			
+			System.out.print("Hvor lenge er max ventetid i minutter(tall): ");
+			int lengde = Integer.parseInt(ordre.nextLine());
+			
+			bestilling = new SnarestMulig(navn,nummer,adresse, lengde); //Setter SnarestMulig = bestilling som definert tidligere:
+			
+			} 
+			else if (svar ==2) {
+	
+			System.out.print("Tast inn ditt navn(tekst): ");
+			String navn = ordre.nextLine();
+			
+			System.out.print("Tast inn ditt tlf nummer(tall): ");
+			int nummer = Integer.parseInt(ordre.nextLine());
+			
+			System.out.print("Tast inn adresse(tekst): ");
+			String adresse = ordre.nextLine();
+			
+			System.out.print("Tast inn dato(tekst): ");
+			String dato = ordre.nextLine();
+			
+			
+			System.out.print("Tast inn tidspunkt(tekst): ");
+			String tidspunkt = ordre.nextLine();
+			
+			bestilling = new Tidspunkt(navn,nummer,adresse, dato, tidspunkt); //Setter Tidspunkt = bestilling som definert tidligere:
+			
+		}
 		
-		System.out.print(viktig.toString());
+		ordre.close(); // Husk å lukke scanneren
 		
-		
-		
-		
-		
+		// Sjekker om bestilling er ok
+        if (bestilling != null) {
+            System.out.print(bestilling.skrivUt());
+        } else {
+            System.out.println("Ugyldig valg.");
+        }
 	}
 
 }

@@ -1,4 +1,4 @@
-package ProveOppg6;
+package ProveOppg5;
 
 public class Bestilling {
 		

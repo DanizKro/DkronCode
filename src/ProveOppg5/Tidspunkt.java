@@ -1,4 +1,4 @@
-package ProveOppg6;
+package ProveOppg5;
 
 public class Tidspunkt extends Bestilling {
 
