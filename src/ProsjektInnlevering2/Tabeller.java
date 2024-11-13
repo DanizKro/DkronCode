@@ -42,6 +42,8 @@ public class Tabeller {
 		
 		Tabeller.skrivUt2(Tabeller.skaler(2, obs));
 		
+		Tabeller.skrivUt(t2);
+		
 	}
 	
 	// sjekker om matrisen er link en annen matrise
@@ -125,7 +127,6 @@ public class Tabeller {
 					
 				} Arrays.sort(nyTabell);
 				
-				
 				return nyTabell; 
 			}
 	 
@@ -138,7 +139,7 @@ public class Tabeller {
 				
 				System.out.print(tab[i][j] + ",");
 			System.out.println();
-		}
+		} System.out.println();
 	}
 
 	
@@ -148,6 +149,6 @@ public class Tabeller {
 		for (int i = 0; i < tab.length; i++) {
 
 			System.out.print(tab[i] + ",");
-		}
+		} System.out.println();
 	}
 }
