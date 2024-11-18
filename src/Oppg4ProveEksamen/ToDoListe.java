@@ -3,27 +3,26 @@ package Oppg4ProveEksamen;
 public class ToDoListe {
 	
 
-	//Lager en klassevariabel av typen ToDoElement av typen tabell
+	//Klassevariabel av typen ToDoElement av typen tabell
 	private ToDoElement[] todoTab;
 	
 	
 	int antall;
 	
-	//Metode som kan lage en tabell med datatypen ToDoElement med (maksAntall) plasser i tabellen.
 	public ToDoListe(int maksAntall) {
 		
 		todoTab = new ToDoElement[maksAntall];
 		antall = 0;
 	}
 	
-	//Metode som kan brukes for å legge til datatypen ToDoElements i en tabell opprettet for samme datatype
 	public void leggTil(ToDoElement tde){
 		
 		if(antall < todoTab.length) {			
 			todoTab[antall] = tde;
 			antall++;
 		} else
-			System.out.print("Det er ikke plass i tabellen!");
+			System.out.println("Det er ikke plass i tabellen til Elementet: " + "\n" +tde);
+			
 	}
 	
 	//Definerer et veldig høyt tall (Integer.MAX_VALUE) sjekker om prioritet er lavere enn der(som det mest sannsynlig vil være)

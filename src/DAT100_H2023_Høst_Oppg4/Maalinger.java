@@ -1,4 +1,4 @@
-package DAT100_H2023_Oppg4;
+package DAT100_H2023_Høst_Oppg4;
 
 public class Maalinger {
 	
@@ -58,6 +58,7 @@ public class Maalinger {
 		return siste;
 	}
 	
+	// 4g)
 	public double hentTemperatur(int pos) {
 		
 //		if(pos < antall) {
@@ -78,6 +79,32 @@ public class Maalinger {
 		}
 		return temperatur;
 	}
+	
+	
+	public boolean finnesOver(double temperatur) {
+		
+//		boolean svar = false;
+//		
+//		for(int i = 0; i < observasjon.length; i++) {
+//			if(observasjon[i].getTemperatur() > temperatur) {
+//				svar = true;
+															//Bør legge til break; så den stopper å leite etter første funn
+//			}												//da blir metodene like
+//		} return svar;
+		
+		
+		//Returnerer true om for FØRSTE temperatur som er høyere enn parameter
+		boolean funnet = false;
+		
+		int i = 0 ;
+		
+		while(i < antall && !funnet) {
+			if(observasjon[i].getTemperatur() > temperatur) { 	//Bruker metoden hentTemperatur, kan også observasjon[i].getTemperatur
+				funnet = true;
+			} i++;
+		} 
+			return funnet;
+}
 	
 	public static void main (String[] args){
 		

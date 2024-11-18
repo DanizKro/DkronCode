@@ -37,9 +37,12 @@ public class ToDoElement {
 		return this.prioritet;
 	}
 	
+	@Override
 	public String toString() {
 		
-		return "Beskrivelse: " + beskrivelse + "\n" + "Nummer: " + nummer + "\n" + "Prioritet: " + prioritet ;
+		return beskrivelse + "\n" + 
+				"Nummer   :" + nummer + "\n" + 
+				"Prioritet: " + prioritet ;
 	}
 	
 	

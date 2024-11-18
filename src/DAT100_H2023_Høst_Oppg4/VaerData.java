@@ -1,4 +1,4 @@
-package DAT100_H2023_Oppg4;
+package DAT100_H2023_Høst_Oppg4;
 
 public class VaerData {
 	

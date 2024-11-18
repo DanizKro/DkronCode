@@ -35,9 +35,7 @@ public class Main {
 		
 		public static void printFil(FlexBillett billett, String filnavn) {
 			
-			
 			try {
-				
 				File dir = new File("/Users/dkron/Documents");
 				File nyFil = new File(dir,filnavn);
 				
@@ -47,7 +45,6 @@ public class Main {
 				
 				skriv.close();
 				System.out.print("skrevet ut");
-		
 		
 			} catch (Exception e) {
 				System.out.print("Feil" + e.getMessage());
