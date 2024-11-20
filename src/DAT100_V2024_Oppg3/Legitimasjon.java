@@ -1,4 +1,4 @@
-package DAT100_V2024_Oppg4;
+package DAT100_V2024_Oppg3;
 
 public abstract class Legitimasjon {
 

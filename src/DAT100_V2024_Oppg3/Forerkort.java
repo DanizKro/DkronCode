@@ -1,4 +1,4 @@
-package DAT100_V2024_Oppg4;
+package DAT100_V2024_Oppg3;
 
 public class Forerkort extends Legitimasjon{
 	
@@ -20,6 +20,7 @@ public class Forerkort extends Legitimasjon{
 		+ "Fødselsnummer: " + fodselsnummer + "\n" 
 		+ "Validert: " + super.getValidert() + "\n"
 		+ "Gyldig til: " + gyldigTil);
+		
 	}
 	
 	//Fake metode som sjekker om noen har gyldig førerkort og returnerer true om de har.
