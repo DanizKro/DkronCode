@@ -1,4 +1,4 @@
-package DAT100_H2023_Vår_Oppg3;
+package DAT100_V2023_Oppg3;
 
 public class Main {
 	

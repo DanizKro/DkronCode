@@ -1,4 +1,4 @@
-package DAT100_H2023_Vår_Oppg4;
+package DAT100_V2023_Oppg4;
 
 public class Person {
 	

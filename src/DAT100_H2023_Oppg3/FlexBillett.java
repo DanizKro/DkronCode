@@ -1,4 +1,4 @@
-package DAT100_H2023_Høst_Oppg3;
+package DAT100_H2023_Oppg3;
 
 public class FlexBillett extends Billett{
 

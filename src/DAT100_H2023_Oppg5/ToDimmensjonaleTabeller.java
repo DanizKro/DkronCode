@@ -1,4 +1,4 @@
-package DAT100_H2023_Vår_Oppg5;
+package DAT100_H2023_Oppg5;
 
 public class ToDimmensjonaleTabeller {
 
