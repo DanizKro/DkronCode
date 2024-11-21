@@ -20,8 +20,6 @@ public class Main {
 			
 			// System.out.print(billett.print());
 			
-			
-			
 			//Skriv utfil
 			
 			FlexBillett n1 = new FlexBillett("Referanse: 1234", "Daniel Kronheim", "13.11.2024");
