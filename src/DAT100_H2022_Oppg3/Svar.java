@@ -8,6 +8,7 @@ public class Svar extends Melding{
 		super(mid);
 		this.verdi = verdi;
 	}
+	
 	@Override
 	public String toString() {
 		
