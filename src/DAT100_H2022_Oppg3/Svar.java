@@ -26,16 +26,26 @@ public class Svar extends Melding{
 		return (m1.getMid() == m2.getMid());
 	} 
 	
-	
+	// Skal lage en metode som gir svaret som blit puttet inn i metoden sammen med MID-variabelen
+
 	public static Svar mottak(Forespørsel f, double temperatur, double fuktighet, double co2) {
 		
 		int mid = f.getMid();
 		Svar s = null;
 		
-		switch(f.getMåling()) {
+		switch(f.getMaaling()) {
 		
+		case Forespørsel.Måling.TEMPERATUR:
+				s = new Svar(mid, temperatur);
+				break;
+		case FUKTIGHET:
+				s = new Svar(mid, fuktighet);
+				break;
+		case CO2:
+				s = new Svar(mid, co2);
+				break;
 		}
-		
+		return s;
 	}
 	
 }

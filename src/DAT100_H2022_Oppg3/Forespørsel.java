@@ -20,6 +20,11 @@ public class Forespørsel extends Melding{
 		return (super.getMid()) + "Forespørsel " + måling.toString();
 	}
 	
+	static Måling s1 = Måling.TEMPERATUR;
 	
+	public static void main(String[] args) {
+		
+		System.out.print(s1);
+	}
 	
 }

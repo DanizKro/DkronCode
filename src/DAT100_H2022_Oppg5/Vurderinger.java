@@ -9,7 +9,7 @@ public class Vurderinger {
 
 		tab.vis();
 	}
-
+	
 	private char[][] innleveringer;
 
 	public Vurderinger(int studentantall, int oppgaveantall) {
