@@ -1,5 +1,8 @@
 package DAT100_V2022_Oppg5;
 
+import java.io.File;
+import java.io.PrintWriter;
+
 public class LEDSkjerm {
 
 	// Ikke eksamens oppgave men bare test av utskrift
@@ -14,11 +17,79 @@ public class LEDSkjerm {
 		// tab.display();
 		// tab.startup();
 
-		tab.display();
-		tab.hline(1);
-
-		tab.display();
-
+//		tab.display();
+//		tab.hline(1);
+//
+//		tab.display();
+		
+		// printFil(tab,"/Users/dkron/Documents","LEDSkjerm.txt");
+	
+		
+		int i = 3;
+		
+		while(i < 10) {
+			System.out.println("i = " + i);
+			i = i+2;
+		}
+		
+		
+	}
+	
+	public static String kall() {
+		
+		int a = 1;
+		int b = 2;
+		
+		String e = "3";
+		
+		return a+b+e;
+	}
+	
+	public static void printFil(LEDSkjerm skjerm, String mappe, String filnavn) {
+		
+		try {
+			
+			File skrivUT = new File(filnavn);
+			
+			PrintWriter utskrift = new PrintWriter(skrivUT);
+			
+			utskrift.print(skjerm.utskrift()); 				// Må være en return String metode
+			
+			System.out.print("Skrevet til fil = Suksess ");
+			
+			utskrift.close();
+			
+		} catch (Exception e ) {
+			
+			System.out.print("Det har skjedd en feil " + e.getMessage());
+		}
+	}
+	
+	
+//	public static void printFil(LEDSkjerm skjerm, String filnavn) {
+//		
+//		try {
+//			File dir = new File("/Users/dkron/Documents");
+//			File nyFil = new File(dir, filnavn);
+//			
+//			PrintWriter skrivUt = new PrintWriter(nyFil);
+//			
+//			
+//			skrivUt.print(skjerm.utskrift());
+//			
+//			skrivUt.close();
+//			
+//			System.out.print("Skevet ut");
+//			
+//		} catch(Exception e) {
+//			System.out.print("Feil " + e.getMessage());
+//		}
+//		
+//	}
+	
+	public String utskrift() {
+		
+		return "";
 	}
 
 	private boolean[][] skjerm;
